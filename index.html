@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calcular Combustível - Álcool ou Gasolina?</title>
+</head>
+<body>
+    <main>
+        <img class="logo" src="images/logo.png" alt="Logo da calculadora de combustível">
+        
+        <h1 class="title">Qual a melhor opção?</h1>
+
+        <form class="form" id="form">
+            <label for="alcool">Valor do Álcool:</label>
+            <input id="alcool" type="number" placeholder="0.00" min="1" step="0.01" required>
+            <!-- Input Alcool -->
+
+            <label for="gasolina">Valor da Gasolina:</label>
+            <input id="gasolina" type="number" placeholder="0.00" min="1" step="0.01" required>
+            <!-- Input Gasolina -->
+
+            <input type="submit" value="Calcular">
+        </form> <!-- Fomr -->
+
+        <section class="result noResult" id="result">
+            <h2 id="textResult">Compensa usar álcool</h2>
+            <p id="textAlcool">Álcool: R$3.90</p>
+            <p id="textGasolina">Gasolina: R$7.50</p>
+        </section> <!-- Section -->
+    </main> <!-- Main -->
+
+    <script src="script.js"></script>
+</body>
+</html>
